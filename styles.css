@@ -237,8 +237,14 @@ footer{
 
 footer span {
     color: #4d7cfe;
+    cursor: pointer;
 }
 
+footer span:hover {
+    color: #83c6ea;
+    transition: ease-in 0.3s;
+}
+ 
 .efeito-cursor {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
