@@ -42,7 +42,8 @@ header a {
 }
 
 header a:hover{
-    color: #0077B5;
+    color: #4d7cfe;
+    transition: ease-in 0.3s;
 }
 
 .principal {
