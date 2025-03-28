@@ -235,6 +235,10 @@ footer{
     border-top: 1px solid #222;
 }
 
+footer span {
+    color: #4d7cfe;
+}
+
 .efeito-cursor {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
