@@ -115,6 +115,7 @@ header a:hover{
 
 .card-projeto a:hover{
     color: #83c6ea;
+    transition: ease-in 0.3s;
 }
 
 .img-projeto {
@@ -187,6 +188,7 @@ header a:hover{
 
 .tag-habilidades:hover {
     background-color: rgba(82, 99, 146, 0.576);
+    transition: ease-in 0.3s;
 }
 
 .botoes-contato {
