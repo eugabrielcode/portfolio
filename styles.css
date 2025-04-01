@@ -39,11 +39,12 @@ ul {
 header a {
     text-decoration: none;
     color: #fff;
+    transition: ease-in 0.3s;
 }
 
 header a:hover{
     color: #4d7cfe;
-    transition: ease-in 0.3s;
+    transition: ease-out 0.3s;
 }
 
 .principal {
@@ -111,11 +112,12 @@ header a:hover{
 
 .card-projeto a {
     text-decoration: none;
+    transition: ease-in 0.3s;
 }
 
 .card-projeto a:hover{
     color: #83c6ea;
-    transition: ease-in 0.3s;
+    transition: ease-out 0.3s;
 }
 
 .img-projeto {
@@ -184,11 +186,12 @@ header a:hover{
     margin: 10px;
     font-size: 14px;
     cursor: pointer;
+    transition: ease-in 0.3s;
 }
 
 .tag-habilidades:hover {
     background-color: rgba(82, 99, 146, 0.575);
-    transition: ease-in 0.3s;
+    transition: ease-out 0.3s;
 }
 
 .botoes-contato {
@@ -238,11 +241,12 @@ footer{
 footer span {
     color: #4d7cfe;
     cursor: pointer;
+    transition: ease-in 0.3s;
 }
 
 footer span:hover {
     color: #83c6ea;
-    transition: ease-in 0.3s;
+    transition: ease-out 0.3s;
 }
  
 .efeito-cursor {
