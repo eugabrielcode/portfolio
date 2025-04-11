@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Gabriel Poças</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/128/15395/15395783.png"
+    />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Partículas -->
+    <div id="tsparticles"></div>
+    <div id="preloader">
+      <div class="preloader-content">
+        <span class="star">✦</span>
+        <p>Iniciando a jornada...</p>
+      </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">Seja Bem Vindo(a)!</h1>
+        <nav class="nav">
+          <a href="#inicio">Início</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h2>Olá, eu sou</h2>
+        <h1><span id="typed-name"></span></h1>
+        <p>Desenvolvedor Web em constante evolução.</p>
+        <a href="#projetos" class="btn">Ver Projetos</a>
+      </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <div class="container-sobre">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="sobre-content">
+          <div class="sobre-texto">
+            <p>
+              Olá! Sou Gabriel Poças de Almeida, estudante de Ciência da
+              Computação na Universidade Veiga de Almeida e entusiasta da
+              tecnologia, sempre em busca de desenvolver soluções criativas e
+              funcionais. Tenho focado meus estudos em HTML, CSS e JavaScript, e
+              estou me aprofundando em tecnologias modernas como TypeScript e
+              React para elevar ainda mais a qualidade dos meus projetos.
+            </p>
+            <br />
+            <p>
+              Sou proativo, organizado e movido por desafios. Estou sempre me
+              atualizando por meio de cursos e projetos pessoais, além de
+              explorar áreas como Node.js e Python para expandir meu
+              conhecimento full-stack. Este portfólio reúne meus principais
+              projetos e conquistas, refletindo minha dedicação, aprendizado
+              constante e paixão pelo desenvolvimento web.
+            </p>
+            <div class="tecnologias">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>ReactJS</span>
+              <span>NodeJS</span>
+              <span>Python</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>Git</span>
+            </div>
+          </div>
+          <div class="sobre-img">
+            <img src="assets/raw.png" alt="Gabriel Poças de Almeida" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projetos (Slider) -->
+    <section id="projetos" class="certificados">
+      <h2 class="section-title">Projetos</h2>
+      <div class="swiper-container certificates-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/blackout.jpg"
+              alt="Foto"
+              onclick="openModal('assets/blackout.jpg')"
+            />
+            <h3>Bot DIscord</h3>
+            <p>
+              Bot para Discord em NodeJS que interage com usuários, automatiza
+              tarefas e auxilia na administração do servidor.
+            </p>
+            <a
+              href="https://eugabrielcode.github.io/blackout/"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto1.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto1.png')"
+            />
+            <h3>Dev Links</h3>
+            <p>
+              O DevLinks é um agregador de links para usar como cartão de
+              visitas online.
+            </p>
+            <a
+              href="https://eugabrielcode.github.io/Devlinks/"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+          <!-- Adicione mais slides conforme necessário -->
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto8.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto8.png')"
+            />
+            <h3>Painel de Login</h3>
+            <p>
+              Interface de login responsiva criada com HTML, CSS e JavaScript.
+              Focada em design moderno e validação básica de formulários.
+            </p>
+            <a
+              href="https://eugabrielcode.github.io/login/"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto4.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto4.png')"
+            />
+            <h3>Painel de Login Discord</h3>
+            <p>
+              Este projeto é uma interface de login moderna, inspirada no design
+              do Discord.
+            </p>
+            <a
+              href="https://github.com/eugabrielcode/discord-login"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto2.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto2.png')"
+            />
+            <h3>Dealership Page</h3>
+            <p>
+              Um site para uma concessionária de veículos, desenvolvido
+              utilizando HTML, CSS e JavaScript.
+            </p>
+            <a
+              href="https://github.com/eugabrielcode/dealership"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto3.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto3.png')"
+            />
+            <h3>Soda Selection</h3>
+            <p>
+              Um cardápio digital de refrigerantes utilizando HTML, CSS e
+              JavaScript. O projeto apresenta a variedade de refrigerantes.
+            </p>
+            <a
+              href="https://github.com/eugabrielcode/refri-dev"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto5.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto5.png')"
+            />
+            <h3>Coffe Page</h3>
+            <p>
+              Este é um projeto de uma página de exemplo para uma cafeteria
+              fictícia, criada utilizando HTML e CSS.
+            </p>
+            <a
+              href="https://github.com/eugabrielcode/coffe-page"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/projeto7.png"
+              alt="Foto"
+              onclick="openModal('assets/projeto7.png')"
+            />
+            <h3>Task Manager</h3>
+            <p>
+              Um aplicativo desenvolvido em Python com linha de comando para
+              adicionar, listar, concluir e remover tarefas.
+            </p>
+            <a
+              href="https://github.com/eugabrielcode/task-manager"
+              target="_blank"
+              class="btn-certificado"
+              >Ver Projetos</a
+            >
+          </div>
+        </div>
+
+        <!-- Navegação e Paginação -->
+        <div class="swiper-button-next certificates-next"></div>
+        <div class="swiper-button-prev certificates-prev"></div>
+      </div>
+    </section>
+
+    <section id="certificados" class="certificados2">
+      <h2 class="section-title">Certificados</h2>
+      <div class="swiper-container certificates-swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/discover.png"
+              alt="Foto"
+              onclick="openModal('assets/discover.png')"
+            />
+            <h3>Rocketseat Discover</h3>
+            <p>Rocketseat - Concluído em Mar/2025</p>
+            <a
+              class="btn-certificado"
+              onclick="openModal('assets/discover.png')"
+              >Ver Certificado</a
+            >
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/devclub.png"
+              alt="Foto"
+              onclick="openModal('assets/devclub.png')"
+            />
+            <h3>Devclub Front-End</h3>
+            <p>Devclub - Concluído em Abr/2025</p>
+            <a class="btn-certificado" onclick="openModal('assets/devclub.png')"
+              >Ver Certificado</a
+            >
+          </div>
+          <!-- Adicione mais slides conforme necessário -->
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/python.png"
+              alt="Foto"
+              onclick="openModal('assets/python.png')"
+            />
+            <h3>Rocketseat Python</h3>
+            <p>Rocketseat - Concluído em Mar/2025</p>
+            <a class="btn-certificado" onclick="openModal('assets/python.png')"
+              >Ver Certificado</a
+            >
+          </div>
+
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/conectar.png"
+              alt="Foto"
+              onclick="openModal('assets/conectar.png')"
+            />
+            <h3>Rocketseat Conectar</h3>
+            <p>Rocketseat - Concluído em Dez/2022</p>
+            <a
+              class="btn-certificado"
+              onclick="openModal('assets/conectar.png')"
+              >Ver Certificado</a
+            >
+          </div>
+          <div class="swiper-slide certificado-card">
+            <img
+              src="assets/excel.png"
+              alt="Foto"
+              onclick="openModal('assets/excel.png')"
+            />
+            <h3>Fundação Bradesco - Excel</h3>
+            <p>Fundação Bradesco - Concluído em Dez/2022</p>
+            <a class="btn-certificado" onclick="openModal('assets/excel.png')"
+              >Ver Certificado</a
+            >
+          </div>
+        </div>
+
+        <!-- Navegação e Paginação -->
+        <div class="swiper-button-next certificates-next"></div>
+        <div class="swiper-button-prev certificates-prev"></div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2 class="section-title">Entre em Contato</h2>
+      <div class="container-contact">
+        <p class="contact-subtitle">
+          Tem alguma dúvida ou quer trocar uma ideia? Me manda uma mensagem!
+        </p>
+
+        <form class="contact-form">
+          <input type="text" name="from_name" placeholder="Seu nome" required />
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Seu e-mail"
+            required
+          />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Sua mensagem..."
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contact-info">
+          <div class="social-icons">
+            <a
+              href="https://github.com/eugabrielcode/"
+              target="_blank"
+              title="GitHub"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a
+              href="https://www.instagram.com/ogbcrf/"
+              target="_blank"
+              title="Instagram"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gabriel-poças-de-almeida-23aa1a306/"
+              target="_blank"
+              title="LinkedIn"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a
+              href="https://discord.com/users/560599047250116628"
+              title="Email"
+            >
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <!-- Scripts (ordem: bibliotecas antes do script.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("Pn2aQBIXZ0QX2z1KL"); // substitui aqui
+      })();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
