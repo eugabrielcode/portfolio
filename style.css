@@ -196,6 +196,7 @@
     gap: 2rem;
     justify-content: center;
     box-shadow: rgba(13, 0, 255, 0.1) 0px 3px 8px;
+    -webkit-box-shadow: 0 3px 8px rgba(13, 0, 255, 0.1);
     background-color: rgba(3, 1, 37, 0.3);
     backdrop-filter: blur(2px);
   }
