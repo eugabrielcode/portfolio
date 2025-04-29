@@ -47,7 +47,6 @@
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   }
   
   .container {
@@ -67,7 +66,7 @@
     animation: pulseGlow 2.5s ease-in-out infinite;
     text-shadow: 0 0 5px #003366;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
-    cursor: default;
+    cursor: pointer;
   }
   
   .logo:hover {
